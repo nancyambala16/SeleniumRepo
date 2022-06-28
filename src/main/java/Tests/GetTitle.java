@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import pages.HomePage;
 import utils.ExcelReaderUtility;
+import utils.Log;
 
 public class GetTitle extends BaseClass {
 
@@ -22,6 +23,7 @@ public class GetTitle extends BaseClass {
 		home.enterEmail(email);
 		home.enterPassword(pass);
 		Thread.sleep(2000);
+		Log.info("Test Completed");
 	}
 
 }
